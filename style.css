@@ -124,3 +124,37 @@ html {
     scroll-behavior: smooth;
 }
 
+.project-header {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+}
+
+.project-content {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.project-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-content .btn {
+    background-color: #004466;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-content .btn:hover {
+    background-color: #002233;
+}
+
