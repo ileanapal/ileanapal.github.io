@@ -1,4 +1,4 @@
-/* Reset Default Styles */
+/* Reset Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,14 +19,13 @@ header {
     align-items: center;
 }
 
+/* Hero Section */
 .hero h1 {
     font-size: 4rem;
-    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
 }
 
 .hero .btn {
@@ -35,18 +34,13 @@ header {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
 }
 
-.hero .btn:hover {
-    background-color: #002233;
-}
-
-/* Navigation Bar */
+/* Navigation */
 nav {
     background-color: #222;
-    padding: 15px 0;
     text-align: center;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -63,11 +57,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styles */
+/* Sections */
 section {
     margin: 40px 10%;
     padding: 30px;
@@ -76,29 +66,28 @@ section {
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* Projects Section */
-.project {
+/* Section Titles */
+h2 {
     text-align: center;
-    margin-bottom: 40px;
+    color: #004466;
+    margin-bottom: 20px;
 }
 
-.project img {
-    width: 100%;
-    max-height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
+/* Styling for Experiences, Projects, Awards */
+.experience, .award, .project {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #004466;
 }
 
 .project a {
+    display: inline-block;
     background-color: #004466;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-}
-
-.project a:hover {
-    background-color: #002233;
 }
 
 /* Footer */
@@ -107,54 +96,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-}
-
-footer a {
-    color: #00c3ff;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-.project-header {
-    background-color: #004466;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.project-header h1 {
-    font-size: 3rem;
-}
-
-.project-content {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-.project-content img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.project-content .btn {
-    background-color: #004466;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.project-content .btn:hover {
-    background-color: #002233;
 }
 
