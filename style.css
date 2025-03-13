@@ -22,10 +22,14 @@ header {
 /* Hero Section */
 .hero h1 {
     font-size: 4rem;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero p {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero .btn {
@@ -34,6 +38,14 @@ header {
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s, transform 0.2s;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #002233;
+    transform: scale(1.05);
 }
 
 /* Navigation */
@@ -45,6 +57,7 @@ nav {
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -55,6 +68,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00c3ff;
 }
 
 /* Sections */
@@ -73,7 +92,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Styling for Experiences, Projects, Awards */
+/* Experience, Projects, Awards Styling */
 .experience, .award, .project {
     background-color: #f9f9f9;
     padding: 15px;
@@ -81,13 +100,64 @@ h2 {
     border-left: 5px solid #004466;
 }
 
-.project a {
-    display: inline-block;
+/* Project Pages - Header */
+.project-header {
     background-color: #004466;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.project-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Project Content Layout */
+.project-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+/* Image Wrapping & Styling */
+.project-img {
+    width: 40%;
+    float: right;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design - Adjust layout for small screens */
+@media (max-width: 768px) {
+    .project-img {
+        width: 100%;
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+
+/* "Back to Home" Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #004466;
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #002233;
 }
 
 /* Footer */
@@ -96,5 +166,21 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+footer a {
+    color: #00c3ff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
